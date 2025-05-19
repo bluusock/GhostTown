@@ -11,8 +11,15 @@ config_version=5
 [application]
 
 config/name="GhostTown-0.0.1"
+run/main_scene="uid://piav4gmekw7y"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
 
 [dotnet]
 

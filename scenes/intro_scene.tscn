@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bpu5mgmltts6t"]
+
+[node name="Intro-Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Hold" type="Label" parent="."]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 280.0
+offset_right = 688.0
+offset_bottom = 329.0
+text = "Intro scene holder 
+"

@@ -1,0 +1,77 @@
+[gd_scene load_steps=3 format=3 uid="uid://piav4gmekw7y"]
+
+[ext_resource type="FontFile" uid="uid://cfqmqps6guy75" path="res://assets/BestaBaru-8OaO0.ttf" id="1_mwg1l"]
+[ext_resource type="Script" uid="uid://6py8w30qeb8r" path="res://scenes/homepage.gd" id="1_qyabd"]
+
+[node name="Homepage" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qyabd")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 20.138
+anchor_top = 7.936
+anchor_right = 20.138
+anchor_bottom = 7.936
+offset_left = -807.52
+offset_top = -317.44
+offset_right = 1125.48
+offset_bottom = 765.56
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mwg1l")
+theme_override_font_sizes/font_size = 46
+text = "GhostTown"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Menu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 775.0
+offset_top = 424.0
+offset_right = 1116.0
+offset_bottom = 756.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Start" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_mwg1l")
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_mwg1l")
+text = "Settings"
+
+[node name="Exit" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_mwg1l")
+text = "Quit Game"
+
+[node name="Fade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -179.0
+offset_right = -299.0
+offset_bottom = -161.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(71.44, 27.2854)
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[connection signal="pressed" from="Menu/Start" to="." method="_on_start_pressed"]
