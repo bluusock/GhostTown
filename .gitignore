@@ -1,0 +1,17 @@
+# Ignore Godot-generated folders/files
+.import/
+.godot/
+
+# Export settings (you can include if you want)
+export.cfg
+export_presets.cfg
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.tmp
+*.log
+
